@@ -29685,9 +29685,10 @@ var WidgetAnnotation = function WidgetAnnotationClosure() {
       data.fieldFlags = 0;
     }
     data.readOnly = this.hasFieldFlag(_util.AnnotationFieldFlag.READONLY);
-    if (data.fieldType === 'Sig') {
+    // inutile pour boondmanager
+    /*if (data.fieldType === 'Sig') {
       this.setFlags(_util.AnnotationFlag.HIDDEN);
-    }
+    }*/
   }
   _util.Util.inherit(WidgetAnnotation, Annotation, {
     _constructFieldName: function WidgetAnnotation_constructFieldName(dict) {
